@@ -10,14 +10,14 @@
     <head>
     <style>
         body
-        {
+{
 	background: linear-gradient(-75deg, #daac58, #d4bf46,rgb(236, 233, 206), #2ea9da, #217de6);
 	background-size: 400% 400%;
 	animation: gradient 25s ease infinite;
 	height: 100vh;
 }
-@keyframes gradient {
-	0% {
+@keyframes gradient
+	{ 0% {
 		background-position: 0% 50%;
 	}
 	50% {
@@ -26,6 +26,7 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}
     </style>
     <style>
 
@@ -40,15 +41,13 @@
     color: rgb(255, 0, 0);
     padding: 16px 32px;
     text-align: center;
-    margin: auto;
-    height: 50vh;
-    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25;
     font-size: 32px;
     margin: 4px 2px;
     opacity: 0.6;
     transition: 0.3s;
-    width: 35%;
-    display: inline-block;
     border-radius: 12px;
     cursor: pointer;
 } 
@@ -62,7 +61,7 @@
 
 <br>
 <br>
-<button class="button" onclick="playCraps();"> Play Craps, if yee Dare</button>
+<button class="button" onclick="playCraps();"> Play Craps, if yee Dare </button>
 <h4>Die 1 result</h4>
 <p id="die1Dis">Die 1 result</p>
 <h4>Die 2 result</h4>
