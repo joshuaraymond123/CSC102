@@ -1,0 +1,89 @@
+<!--Joshua Hepner-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--background using style element. Applied gradient to add a ocean tidal effect. Curly brackets algined around background effect. @keyframes used for gradient animation-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="casino.js"></script>
+    <title>Casino Royale</title>
+    <head>
+    <style>
+        body
+        {
+	background: linear-gradient(-75deg, #daac58, #d4bf46,rgb(236, 233, 206), #2ea9da, #217de6);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 90% 40%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    </style>
+    section{
+            border: 10px solid grey;
+            height: 90vh;
+        }
+        .container{
+            border: 10px solid grey
+            max-width: 700px;
+            margin: auto;
+
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-conternt-center;
+        }
+    <style>
+
+    button
+{
+    background-image: url(skull.jpeg);
+    background-position: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #555555;
+    border-style: outset;
+    border: 2px solid gold;
+    color: rgb(255, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    margin: auto;
+    height: 50vh;
+    justify-content: center;
+    font-size: 32px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    width: 35%;
+    display: inline-block;
+    border-radius: 12px;
+    cursor: pointer;
+} 
+</style>
+</head>
+
+<br>
+<p style="font-size: 50px;font-family: fantasy;text-align: center;color: darkslateblue;">Welcome to Casino Royale</p>
+<br>
+<h4 style="font-size: large;font-family: cursive;text-align: center;color:darkred;"> Step right up if yee dare! Come all swashbucklers and Pirates alike! Gain a fable of riches or walk the plank to yee watery grave...</h4>
+
+<br>
+<br>
+<button class="button" onclick="playCraps();"> Play Craps, if yee Dare</button>
+<h4>Die 1 result</h4>
+<p id="die1Dis">Die 1 result</p>
+<h4>Die 2 result</h4>
+<p id="die2Dis">Die 2 result</p>
+<h4>Sum result</h4>
+<p id="sumDis"> Sum Result</p>
+<h4> Win, Lose or Draw</h4>
+<p id="resultsDis">Result here</p>
+</body>
+</html>
