@@ -1,0 +1,145 @@
+<!--Joshua Hepner-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--script command to .js file-->>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="casino.js"></script>
+    <!--inspired by one of my favorite games Port Royale, I enjoy simulation games as well as history-->
+    <title>Casino Royale</title>
+    <head>
+        <!--style for body includes gradiant feature meant to look like a cascading wave on the beach. color, position, size, and effect type. Keyframes used for gradiant positioning transition.-->
+    <style>
+        body
+    {
+	background: linear-gradient(-75deg, #daac58, #d4bf46,rgb(236, 233, 206), #2ea9da, #217de6);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+	height: 100vh;
+    }
+@keyframes gradient
+    {
+     0% 
+    {
+		background-position: 0% 50%;
+	}
+	50% 
+    {
+		background-position: 90% 40%;
+    }
+	100% 
+    {
+		background-position: 0% 50%;
+    }
+    }
+    button
+    {
+    background-image: url(skull.jpeg);
+    background-position: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: outset;
+    border: 2px solid gold;
+    border-radius: 12px;
+    color: rgb(255, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 32px;
+    opacity: 0.9;
+    transition: 0.3s;
+    cursor: pointer;
+    }  
+    h1
+    {
+        text-align: center;
+        font-style: oblique;
+        color: rgb(87, 40, 84);
+        font-family: cursive;
+        border: rgb(87, 40, 84);
+        border-width: thick;
+        border-style: groove;
+        background-image: url(8CSO.gif);
+        border-image-repeat: inherit;
+        border-radius: 12px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.9;
+    }
+    h4
+    {
+        text-align: center;
+        color:whitesmoke;
+        font-family:sans-serif;
+        border: rgb(252, 7, 7);
+        border-style: ;
+        width: 80px;
+        border-width: thick;
+        border-style: groove;
+        background-color: black;
+        border-radius: 12px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.6;
+    } 
+    p
+    {
+        color: darkslateblue;
+        text-align: center;
+        font-style: oblique;
+        font-size: 200%;
+        font-weight: 900;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    blockquote
+    {
+        border: rgb(218, 127, 127);
+        font-style: oblique;
+        text-align: center;
+        margin-left:40%;
+        margin-right:40%;
+        border-width: thick;
+        border-style: groove;
+        border-radius: 12px;
+        background-image: url(scroll.jpg);
+        background-position: center;
+    }    
+    iframe 
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
+        border-radius: 12px;
+    }  
+</style>
+<!--button effect, and created class for button, h4, p for design and symmetry-->
+</head>
+<br>
+<!--title header-->
+<h1 style="font-size: 60px;font-family:serif;text-align: center;color: rgb(112, 0, 240);">Welcome to Casino Royale on Pirate Island</h1>
+<br>
+<!--tried a blockquote for the text format-->
+<blockquote style="font-size: large;font-family: cursive;text-align: center;color:rgb(15, 0, 0);"> Step right up yee brave souls! Come all Pirates and Swashbucklers alike! Gain a fable of riches or walk the plank to yee watery grave... Only the stongest survive at Casino Royale! 
+Here on this island we gamble with our lives! Like the scallywags before us, each wager is paid in years of indentured servitude to the respective Captains! Some say it's rigged, I say fate decides yee outcome...</blockquote>
+<br>
+<br>
+<!--button class applied for background and color. onclick reference for casino.js file to sequence function upon game interaction-->
+<button button class="button" onclick="playCraps();"> Bet yee life, if yee dare </button>
+<!--h4 and p lines for the display and results. I removed the text for where the results display for a cleaner look. The numbers execute when the button is pressed. ID refence to JavaScript function-->
+<h4>1st Bone</h4>
+<p id="die1Dis"></p>
+<h4>2nd Bone</h4>
+<p id="die2Dis"></p>
+<h4>Tally</h4>
+<p id="sumDis"> </p>
+<h4> Fate...</h4>
+<p id="resultsDis"></p>
+</body>
+<!--Added a Pirate themed song from Yotube-->
+<iframe class="ifram container" width="560" height="315" src="https://www.youtube.com/embed/4o5cGTnP4OY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></.iframe>
+</html>
