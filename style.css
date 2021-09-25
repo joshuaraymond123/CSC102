@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(to top, #58151A,#bc2909,rgba(240, 163, 64, 0.867), #71A8ee, #3072EB, #1552C6);
+} 
+h1 {
+   color: aquamarine;
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p {
+    color: yellow;
+    font-size: 400%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.container{
+    position:relative;
+    width: 100%;
+    max-width: 400px;
+    display:block;
+}
+.container img{
+    border-radius: 12px;
+    width: 600px;
+    height: 400px;
+}
+button{
+    border-radius: 14px;
+    border-width: unset;
+    border-style: dotted;
+    border-color:whitesmoke;
+    font-family: fantasy;
+    font-size: 25px;
+    color: indianred;
+    background-color: royalblue;
+    cursor: crosshair;
+    margin-left: auto;
+    margin-right: auto;
+}
