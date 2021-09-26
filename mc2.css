@@ -1,0 +1,34 @@
+/* style background gradient applied same color scheme as opening page, changed the style*/
+body{
+    background-image: linear-gradient(55deg,grey,grey,gold,pink,khaki);
+    background-repeat:round;
+    background-size:inherit;
+}
+/* h1 styling for heading */
+h1{
+    color: midnightblue;
+    font-size: 400%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* table features edited for unique look */
+table{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: thick;
+    border-style: double;
+    border-color: rgb(0, 76, 151);
+}
+/* th alteration for the title line of the table */
+th{
+    color:midnightblue;
+}
+/* table data color change, keeps uniformed look between pages */
+td{
+    color: forestgreen;
+}
