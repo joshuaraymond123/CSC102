@@ -1,0 +1,70 @@
+<!--Joshua Hepner-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JS script line -->
+    <script src="buttonjava.js"></script>
+    <!--style sheet link-->
+    <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+    <!--Google stop button style sheet link-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Title for tab-->
+    <title> Programmed Buttons </title>
+</head>
+<!--Header line with image and title-->
+<h1>
+    <img src="UATspaceLogo-2.jpg">
+    Welcome to UAT Space Program!
+</h1>
+<body>
+    <!--table-->
+    </table>
+    <!--data reference to js, style for border outline-->
+    <table id="data" border="7" width="80%">
+        <col style="width: 15%;">
+        <col style="width: 15%;">
+        <!--thread for group header content-->
+        <thread>
+            <!--tr table row; th table header; cell designations-->
+            <tr style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <th>Data Type</th>
+        <th>Reading</th>
+    </tr>
+        </thread>
+        <!--tbody represents blocks within table tr with id refence for js.; td for table data -->
+        <tbody style="font-weight: bolder;">
+        <tr id="seconds"><td>Time Elapsed:</td><td>15 seconds</td></tr>
+        <tr id="latitude"><td>latitude:</td><td>0</td></tr>
+        <tr id="Longitude"><td>Longitude:</td><td>0</td></tr>
+        <tr id="gps_altitude"><td>GPS Altitude:</td><td>1500</td></tr>
+        <tr id="bmpSensor_altitude"><td>BMOP Sensor Altitude:</td><td>30383.04</td></tr>
+        <tr id="bmpSensor_pressure"><td>BMO Sensor Pressure:</td><td>2.34</td></tr>
+        <tr id="bmpSensor_temp"><td>BMP Sensor Temp:</td><td>0</td></tr>
+        <tr id="bdigSensor_temp"><td>Digital Sensor Temp:</td><td>24.12</td></tr>
+        <tr id="cssSensor_temp"><td>Css Sensor Temp:</td><td>25</td></tr>
+        <tr id="cssSensor_eC02"><td>Css Sensor eC02:</td><td>400</td></tr>
+        <tr id="cssSensor_TVOC"><td>Css Sensor TVOC:</td><td>0</td></tr>
+        <tr id="UV"><td>UV:</td><td>0</td></tr>
+        <tr id="accelX"><td>accelX:</td><td>0.87</td></tr>
+        <tr id="accelY"><td>accelY:</td><td>-0.02</td></tr>
+        <tr id="accelZ"><td>accelZ:</td><td>9.61</td></tr>
+        <tr id="gyroX"><td>gyroX:</td><td>0.13</td></tr>
+        <tr id="gyroY"><td>gyroY:</td><td>0.57</td></tr>
+        <tr id="gyroZ"><td>gyroZ:</td><td>-0.24</td></tr>
+        <tr id="magneticX"><td>magneticX:</td><td>4.66</td></tr>
+        <tr id="magneticY"><td>magneticY:</td><td>0.01</td></tr>
+        <tr id="magneticZ"><td>magneticZ:</td><td>-0.4</td></tr>
+    </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--button for play and stop button; onclick command for js; class for css styling;-->
+   <button onclick="start();" class="play" id="startButton"></button>
+   <button onclick="stop();" id="stopButton" disabled=true class="material-icons">stop</button>
+</body>
+</html>
