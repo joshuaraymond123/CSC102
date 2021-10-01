@@ -1,0 +1,82 @@
+body{
+    background-image: radial-gradient(farthest-corner,honeydew,cyan,pink,turquoise,purple,orange,yellowgreen,aqua,lavender,salmon,firebrick,midnightblue);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+h1{
+    color: indigo;
+    font-family: sans-serif;
+    font-size: 400%;
+    text-align: center;
+    border-style: dotted dashed solid double;
+    border-color: slategray;
+
+}
+.button{
+    color: lime;
+    background-image: url(moon.gif);
+    cursor: progress;
+    font-size: 1000%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 22%;
+    border-top-width: thick;
+    border-color: greenyellow;
+}
+.soundButton{
+    color:steelblue;
+    background-image: url(ziggy.gif);
+    font-size: 1000%;
+    font-family: fantasy;
+    font-weight: bolder;
+    background-repeat:space;
+    background-position: center;
+    cursor: move;
+    background-color:lawngreen;
+    border-radius: 13%;
+    border-left-width: 12px;
+    border-color: darkorchid;
+    float:left;
+
+}
+.audioButton{
+    color:gold;
+    background-image: url(Americanflag.gif);
+    font-size: 1000%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    background-repeat: repeat;
+    background-position: center;
+    cursor: grab;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 6%;
+    border-right-width: 20px;
+    border-color: white;
+    float: right;
+
+
+
+
+}
+.aButton{
+    color: yellowgreen;
+    background-image: url(tree.gif);
+    font-size: 1000%;
+    font-family: cursive;
+    font-weight: lighter;
+    cursor: help;
+    border-radius: 10%;
+    border-bottom-width: 22px;
+    border-color: seagreen;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
