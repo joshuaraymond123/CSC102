@@ -1,0 +1,79 @@
+<!--Joshua Hepner-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--background using style element. Applied gradient to add a ocean tidal effect. Curly brackets algined around background effect. @keyframes used for gradient animation-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="casino.js"></script>
+    <title>Casino Royale</title>
+    <head>
+    <style>
+        body
+{
+	background: linear-gradient(-75deg, #daac58, #d4bf46,rgb(236, 233, 206), #2ea9da, #217de6);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient
+	{ 0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 90% 40%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    button
+{
+    background-image: url(skull.jpeg);
+    background-position: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #555555;
+    border-style: outset;
+    border: 2px solid gold;
+    color: rgb(255, 0, 0);
+    margin-left: 40%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 32px;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+    h4
+    {
+        text-align: center;
+        font-family:sans-serif;
+    }
+    p
+    {
+        text-align: center;
+        color: orchid;
+        font-family: cursive;
+    }
+</style>
+</head>
+<br>
+<button onclick= url(casinoentrance.html)style="font-size: 50px;font-family: fantasy;text-align: center;color: rgb(112, 0, 240);">Welcome to Casino Royale</button>
+<p style="font-size: 50px;font-family: fantasy;text-align: center;color: rgb(112, 0, 240);">Welcome to Casino Royale</p>
+<br>
+<blockquote style="font-size: large;font-family: cursive;text-align: center;color:darkred;"> Step right up if yee dare! Come all swashbucklers and Pirates alike! Gain a fable of riches or walk the plank to yee watery grave...</blockquote>
+<br>
+<br>
+<button button class="button" onclick="playCraps();"> Play Craps, if yee Dare </button>
+<h4>1st die</h4>
+<p id="die1Dis"></p>
+<h4>2nd die</h4>
+<p id="die2Dis"></p>
+<h4>Tally</h4>
+<p id="sumDis"> </p>
+<h4> Fate...</h4>
+<p id="resultsDis"></p>
+</body>
+</html>
