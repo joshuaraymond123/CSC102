@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links to js and css pages for variable and style-->
+    <script src="2.js"></script>
+    <link href="MCOLcss.css" rel="stylesheet" type="text/css"/>
+    <!--title-->
+    <title>Mission Control Operator Login</title>
+</head>
+<body>
+    <!--page header-->
+    <h1>
+        Welcome to Mission Control
+    </h1>
+    <br>
+    <!--id line displaying status of results based on information input-->
+    <p id="loginStatus" class="texty">Status of login...</p>
+    <br>
+    <form id="credSubmit" onsubmit="return false">
+        First Name:     <input type="text" id="fName" /> <br>
+        Last Name:      <input type="text" id="lName" /> <br>
+        Badge Number:   <input type="number" id="badgeID" /> <br>
+        <input type="submit" onclick="checkCreds();" />
+    </form>
+</body>
+</html>
