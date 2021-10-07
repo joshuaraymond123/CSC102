@@ -1,0 +1,115 @@
+/*EXTERNAL STYLE SHEET*/
+/* p styling for top line of page*/
+p{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bolder;
+text-align: center;
+font-size: 300%;
+text-decoration: overline;
+text-decoration-color: coral;
+}
+/* h1 styling for reference */
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 150%;
+    text-decoration: underline;
+    text-decoration-thickness: 15px;
+    text-decoration-color: coral;
+}
+/* th chart header style*/
+th{
+    text-align: center;
+    font-size: 220%;"
+}
+/* p styling for top line of page*/
+tr{
+    text-align: center;
+}
+/* table style for box shadow effect and overall table style*/
+table {
+     width: 50%; box-shadow:  5px 15px 5px 30px  yellowgreen; 
+     opacity: 0.77;
+     background: transparent;
+     background-color: yellowgreen;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 15px;
+     border-color: yellow;
+}
+/* .candy refence to div class, applied image and border style*/
+.candy{
+    font-size: 200%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    background-image: url(candy.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    background-attachment: scroll; 
+    border-radius: 13px;
+    border-style: groove;
+    border-color: yellowgreen;
+    border-width: thick;
+}
+/* body style associated with glowing button, gradient created to look like candy corn*/
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(33deg,yellow,yellow,orange,orange,orange,orange,orange,white,white,white);
+  }
+  /* glow effect tied to div class features below were created for the glowing button, clicking button links to candystore.com, where orginal info is located*/
+  .glow {
+    text-align: center;
+    display: block;
+    margin: 120px 0;
+  }
+  .glow span {
+    border-radius: 25px;
+    color: grey;
+    box-shadow: 0 0 2px grey, 0 0 10px grey, 0 0 20px greenyellow, 0 0 30px greenyellow,
+      0 0 40px greenyellow, 0 0 50px greenyellow;
+    -webkit-animation: blink 0.7s infinite alternate;
+    animation: blink 0.7s infinite alternate;
+  }
+  
+  .glow .text {
+    font-size: 18px;
+    padding: 15px;
+    font-weight: 800;
+  }
+  .text > a {
+    color: orangered;
+    text-decoration: none;
+    padding: 20px;
+  }
+  .text > a:hover {
+    background: transparent !important;
+  }
+  @-webkit-keyframes blink {
+    100% {
+      box-shadow: 0 0 3px grey, 0 0 10px greenyellow, 0 0 20px greenyellow, 0 0 40px greenyellow,
+        0 0 70px black, 0 0 80px black;
+    }
+  }
+  
+  @keyframes blink {
+    100% {
+      box-shadow: 0 0 3px grey, 0 0 10px yellowgreen, 0 0 20px greenyellow, 0 0 40px greenyellow,
+        0 0 70px black, 0 0 80px black;
+    }
+    /* created customerized scroll bar to match the rest of the page*/
+  }
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: yellowgreen;
+    outline: 1px solid coral;
+  }
